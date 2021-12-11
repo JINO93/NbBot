@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import nonebot
-
+from nonebot.adapters.mirai import Bot
 # Custom your logger
 # 
 # from nonebot.log import logger, default_format
@@ -17,6 +17,7 @@ nonebot.init()
 app = nonebot.get_asgi()
 
 driver = nonebot.get_driver()
+driver.register_adapter("mirai", Bot)
 
 nonebot.load_builtin_plugins()
 
