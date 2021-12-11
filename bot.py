@@ -17,7 +17,7 @@ nonebot.init()
 app = nonebot.get_asgi()
 
 driver = nonebot.get_driver()
-driver.register_adapter("mirai", Bot)
+driver.register_adapter("mirai", Bot, qq=1834240938)
 
 nonebot.load_builtin_plugins()
 
